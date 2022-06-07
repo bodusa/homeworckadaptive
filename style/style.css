@@ -23,7 +23,6 @@ header{
 }
 
 .header-blocks{
-	margin-top: 58px;
 	align-items: center;
 }
 
@@ -181,6 +180,10 @@ footer{
 
 .travel-image{
 	width: 289px;
+}
+
+.logo{
+	margin-bottom: 58px;
 }
 
 @media (max-width: 1200px){
