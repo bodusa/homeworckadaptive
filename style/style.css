@@ -176,9 +176,6 @@ footer{
 
 .that-in-the-future-block{
 	text-align: center;
-}
-
-.travel-image{
 	width: 289px;
 }
 
@@ -225,7 +222,10 @@ footer{
 		width: 100%;
 	}
 
-	form,input,button.form-btn,h1,h2,p,div,.header-block{
+	form,input,.form-btn,h1,h2,p,div,.header-block{
 		width: 100%;
+	}
+	input,.form-btn{
+		box-sizing: border-box;
 	}
 }
