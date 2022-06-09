@@ -183,6 +183,16 @@ footer{
 	margin-bottom: 58px;
 }
 
+.that-in-the-future-blocks,.that-in-the-future-title,.form-title,form{
+	opacity: 0;
+	transition: 0.7s;
+}
+
+.active{
+	opacity: 1;
+	transform: rotateX(360deg);
+}
+
 @media (max-width: 1200px){
 	.conteiner{
 		width: 	972px;
