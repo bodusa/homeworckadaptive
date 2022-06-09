@@ -1,6 +1,7 @@
 const future=document.querySelector(".that-in-the-future");
 const form=document.querySelector(".form");
-const header=document.querySelector("header");
+const button=document.querySelector(".btn-menu");
+const menu=document.querySelector(".menu")
 
 const futureConteiner=future.firstElementChild;
 const futureTitle=futureConteiner.children[0];
@@ -15,13 +16,19 @@ function addClass(elem1,elem2){
 	elem2.classList.add("active");
 }
 
-console.log(formForm);
-
 let media1,media2,media3,media4;
+let menuActive=false;
+
+button.addEventListener("click",function(e){
+	if(!menuActive){
+		menu.classList.add("menu-active");
+	}else{
+		menu.classList.remove("menu-active")
+	}
+	menuActive=!menuActive;
+});
 
 setInterval(function(){
-	console.log(window.pageYOffset)
-
 	media1=(window.pageYOffset>=600 && window.innerWidth>1200);
 	media2=(window.pageYOffset>=1203 && window.innerWidth<1200 && window.innerWidth>992);
 	media3=(window.pageYOffset>=1243 && window.innerWidth<992 && window.innerWidth>756);
