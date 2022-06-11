@@ -22,8 +22,10 @@ let menuActive=false;
 button.addEventListener("click",function(e){
 	if(!menuActive){
 		menu.classList.add("menu-active");
+		button.classList.add("btn-menu-active");
 	}else{
-		menu.classList.remove("menu-active")
+		menu.classList.remove("menu-active");
+		button.classList.remove("btn-menu-active");
 	}
 	menuActive=!menuActive;
 });
