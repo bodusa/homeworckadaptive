@@ -212,6 +212,13 @@ a:hover{
 
 .btn-menu{
 	display: none;
+	width: 50px;
+	height: 50px;
+	padding: 10px 0;
+}
+
+.btn-menu-active>span{
+	display: none;
 }
 
 nav.menu-active{
@@ -221,6 +228,27 @@ nav.menu-active{
 
 .logo{
 	height: 39px;
+}
+
+.btn-menu:before,.btn-menu:after{
+	content: "";
+	transition: 0.5s;
+}
+
+.btn-menu-element,.btn-menu:before,.btn-menu:after{
+	display: inline-block;
+	background: #ffffff;
+	height: 5px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.btn-menu-active:before{
+	transform: rotate(45deg) translateX(40%);
+}
+
+.btn-menu-active:after{
+	transform: rotate(-45deg) translateX(40%);
 }
 
 @media (max-width: 1200px){
@@ -284,7 +312,14 @@ nav.menu-active{
 		box-sizing: border-box;
 	}
 	.btn-menu{
-		display: inline-block;
+		display: flex;
+		background: rgba(0,0,0,0);
+		border: 0px;
 		z-index: 1;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.logo{
+		align-self: center;
 	}
 }
